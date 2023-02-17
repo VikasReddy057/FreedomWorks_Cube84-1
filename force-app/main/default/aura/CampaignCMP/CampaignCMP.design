@@ -1,0 +1,6 @@
+<design:component>
+    <design:attribute name="section1" label="Record Type Names (Historical Campaigns)" required="true" default="Direct Mail Campaign;Email Campaign;Text campaign;Marketing Segment" />
+    <design:attribute name="section2" label="Record Type Names (Active Campaigns)" required="true" default="Trip/Meeting;Other Event;Advocacy Campaign;Advocacy Segment" />
+    <design:attribute name="section3" label="Record Type Names (Marketing List)" required="true" default="Marketing List"/>
+    <design:attribute name="section4" label="Record Type Names (Restore Liberty Campaigns)" required="true" default="Restore Liberty Campaign"/>
+</design:component>

@@ -1,0 +1,57 @@
+[
+    {
+        "mailingId": null,
+        "listId": 149,
+        "recipientId": 951328,
+        "status": "NORMAL",
+        "confirmed": false,
+        "sourceId": null,
+        "dateUnsub": null,
+        "dateJoined": "2020-01-21T15:28:47Z",
+        "address": "rdinesh5697@gmail.com"
+    },
+    {
+        "mailingId": null,
+        "listId": 149,
+        "recipientId": 951398,
+        "status": "NORMAL",
+        "confirmed": false,
+        "sourceId": null,
+        "dateUnsub": null,
+        "dateJoined": "2020-01-21T10:18:15Z",
+        "address": "dfhb@berijam.com"
+    },
+    {
+        "mailingId": null,
+        "listId": 149,
+        "recipientId": 951399,
+        "status": "NORMAL",
+        "confirmed": false,
+        "sourceId": null,
+        "dateUnsub": null,
+        "dateJoined": "2020-01-21T10:18:15Z",
+        "address": "dfhb@berijam.com"
+    },
+    {
+        "mailingId": null,
+        "listId": 149,
+        "recipientId": 951400,
+        "status": "NORMAL",
+        "confirmed": false,
+        "sourceId": null,
+        "dateUnsub": null,
+        "dateJoined": "2020-01-21T10:18:15Z",
+        "address": "dfhb@berijam.com"
+    },
+    {
+        "mailingId": null,
+        "listId": 149,
+        "recipientId": 951401,
+        "status": "NORMAL",
+        "confirmed": false,
+        "sourceId": null,
+        "dateUnsub": null,
+        "dateJoined": "2020-01-21T10:18:16Z",
+        "address": "dfhb@berijam.com"
+    }
+]

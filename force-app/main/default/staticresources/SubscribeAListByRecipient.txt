@@ -1,0 +1,11 @@
+{
+    "mailingId": null,
+    "listId": 104,
+    "recipientId": 896423,
+    "status": "UNSUB",
+    "confirmed": false,
+    "sourceId": null,
+    "dateUnsub": "2020-01-21T08:53:46Z",
+    "dateJoined": "2020-01-21T06:25:59Z",
+    "address": "ppjjay1@gmail.com"
+}

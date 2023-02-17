@@ -1,0 +1,5 @@
+<aura:component>
+    <aura:attribute name="PassesValueFromVF" type="string"/>
+    <b>Account Name from vf</b> : {!v.PassesValueFromVF}
+
+</aura:component>

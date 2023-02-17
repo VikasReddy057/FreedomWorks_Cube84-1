@@ -1,0 +1,16 @@
+<apex:page standardController="Contact"  sidebar="false" showHeader="false" >
+  <apex:includeLightning />
+    <div  id="compContainer"  />
+  <script>
+    var id= '{!contact.Id}';
+     $Lightning.use("c:ContactInfoCMPApp", function() {
+         $Lightning.createComponent("c:ContactInfoCMP",
+             {recordId:id},
+             "compContainer",
+             function(cmp) {
+                 //alert("c:VFPageApp loaded successfully in VF page");
+             }
+         );
+     });
+  </script>
+</apex:page>

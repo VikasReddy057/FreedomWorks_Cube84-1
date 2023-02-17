@@ -1,0 +1,58 @@
+[
+    {
+        "brandId": 2,
+        "title": "FreedomWorks, Inc",
+        "externalId": "",
+        "channel": "E",
+        "active": true
+    },
+    {
+        "brandId": 3,
+        "title": "FreedomWorks Foundation",
+        "externalId": "",
+        "channel": "E",
+        "active": true
+    },
+    {
+        "brandId": 4,
+        "title": "FreedomWorks for America",
+        "externalId": "",
+        "channel": "E",
+        "active": true
+    },
+    {
+        "brandId": 5,
+        "title": "FreedomWorks PAC",
+        "externalId": "",
+        "channel": "E",
+        "active": true
+    },
+    {
+        "brandId": 8,
+        "title": "FreedomWorks Foundation - New IPs",
+        "externalId": "",
+        "channel": "E",
+        "active": true
+    },
+    {
+        "brandId": 9,
+        "title": "FreedomWorks PAC - New IPs",
+        "externalId": "",
+        "channel": "E",
+        "active": true
+    },
+    {
+        "brandId": 10,
+        "title": "FreedomWorks for America - New IPs",
+        "externalId": "",
+        "channel": "E",
+        "active": true
+    },
+    {
+        "brandId": 11,
+        "title": "FreedomWorks, Inc - New IPs",
+        "externalId": null,
+        "channel": "E",
+        "active": true
+    }
+]

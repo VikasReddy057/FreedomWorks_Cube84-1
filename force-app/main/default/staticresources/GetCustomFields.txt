@@ -1,0 +1,164 @@
+[
+    {
+        "customFieldId": 1,
+        "title": "Contact_ID",
+        "active": false,
+        "type": "TEXT_MEDIUM"
+    },
+    {
+        "customFieldId": 2,
+        "title": "Legacy_ID",
+        "active": true,
+        "type": "TEXT_MEDIUM"
+    },
+    {
+        "customFieldId": 3,
+        "title": "WarmUp_Date",
+        "active": true,
+        "type": "DATE_TIME"
+    },
+    {
+        "customFieldId": 4,
+        "title": "Largest Gift Amount",
+        "active": false,
+        "type": "DECIMAL_NUMBER"
+    },
+    {
+        "customFieldId": 5,
+        "title": "Largest Donation Amount",
+        "active": true,
+        "type": "CURRENCY"
+    },
+    {
+        "customFieldId": 6,
+        "title": "Old_IP_Exclude",
+        "active": true,
+        "type": "BIT"
+    },
+    {
+        "customFieldId": 7,
+        "title": "Contact Owner",
+        "active": true,
+        "type": "TEXT_SHORT"
+    },
+    {
+        "customFieldId": 8,
+        "title": "Nickname",
+        "active": true,
+        "type": "TEXT_SHORT"
+    },
+    {
+        "customFieldId": 9,
+        "title": "Suffix",
+        "active": true,
+        "type": "TEXT_SHORT"
+    },
+    {
+        "customFieldId": 10,
+        "title": "Middle Name",
+        "active": true,
+        "type": "TEXT_SHORT"
+    },
+    {
+        "customFieldId": 11,
+        "title": "Last Donation Amount",
+        "active": true,
+        "type": "CURRENCY"
+    },
+    {
+        "customFieldId": 12,
+        "title": "Greeting",
+        "active": true,
+        "type": "TEXT_SHORT"
+    },
+    {
+        "customFieldId": 13,
+        "title": "Last Donation Date",
+        "active": true,
+        "type": "DATE_TIME"
+    },
+    {
+        "customFieldId": 14,
+        "title": "Last Action Date",
+        "active": true,
+        "type": "DATE_TIME"
+    },
+    {
+        "customFieldId": 15,
+        "title": "Congressional District",
+        "active": true,
+        "type": "TEXT_SHORT"
+    },
+    {
+        "customFieldId": 16,
+        "title": "Average Donation",
+        "active": true,
+        "type": "CURRENCY"
+    },
+    {
+        "customFieldId": 17,
+        "title": "County",
+        "active": true,
+        "type": "TEXT_MEDIUM"
+    },
+    {
+        "customFieldId": 18,
+        "title": "Geocode Quality",
+        "active": true,
+        "type": "TEXT_SHORT"
+    },
+    {
+        "customFieldId": 19,
+        "title": "Has Recurring Donation",
+        "active": true,
+        "type": "BIT"
+    },
+    {
+        "customFieldId": 20,
+        "title": "Last Action Type",
+        "active": true,
+        "type": "TEXT_SHORT"
+    },
+    {
+        "customFieldId": 21,
+        "title": "Lifetime Action Count",
+        "active": true,
+        "type": "WHOLE_NUMBER"
+    },
+    {
+        "customFieldId": 22,
+        "title": "Lifetime Donation Count",
+        "active": true,
+        "type": "WHOLE_NUMBER"
+    },
+    {
+        "customFieldId": 23,
+        "title": "Tiny_Id",
+        "active": true,
+        "type": "TEXT_SHORT"
+    },
+    {
+        "customFieldId": 24,
+        "title": "Split",
+        "active": true,
+        "type": "WHOLE_NUMBER"
+    },
+    {
+        "customFieldId": 25,
+        "title": "RegID",
+        "active": true,
+        "type": "WHOLE_NUMBER"
+    },
+    {
+        "customFieldId": 26,
+        "title": "cool ref",
+        "active": true,
+        "type": "YES_NO"
+    },
+    {
+        "customFieldId": 27,
+        "title": "Register",
+        "active": true,
+        "type": "TEXT_LONG"
+    }
+]

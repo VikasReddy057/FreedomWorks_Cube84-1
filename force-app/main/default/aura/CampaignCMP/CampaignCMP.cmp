@@ -1,0 +1,52 @@
+<aura:component  implements="force:hasRecordId,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction"  access="global" >
+    
+    <aura:attribute name="section1" type="String"  />
+    <aura:attribute name="section2" type="String" />
+    <aura:attribute name="section3" type="String"/>
+	<aura:attribute name="section4" type="String" />
+    <aura:attribute name="isLabelSet" type="Boolean" />
+        <aura:handler name="init" value="{! this }" action="{! c.doInitHandler }"/>
+        <div class="c-container">
+            <lightning:layout multipleRows="true" >
+                <lightning:layoutItem size="12" padding="around-small">
+                    <lightning:card  title="MarketList Campaigns">
+                    </lightning:card> <br/>                
+                    <div class="custom-box">
+                        <aura:if isTrue="{!v.section3!=null}">
+                            <c:SplitCampaign recordId="{!v.recordId}" fieldSet="MarketList" recordTypeNames="{!v.section3}" type="Marketing Lists"/>
+                        </aura:if>
+                    </div>
+                </lightning:layoutItem>  
+                <lightning:layoutItem size="12" padding="around-small">
+                    <lightning:card  title="Active Campaigns">
+                    </lightning:card> <br/>
+                    <div class="custom-box">
+                        <aura:if isTrue="{!v.section2!=null}">
+                            <c:SplitCampaign recordId="{!v.recordId}" fieldSet="ActiveCampaign" recordTypeNames="{!v.section2}" type="Active Campaigns"/>
+                        </aura:if>
+                    </div>
+                </lightning:layoutItem>                
+                <lightning:layoutItem size="12" padding="around-small">
+                    <lightning:card  title="Historical Campaigns">
+                    </lightning:card> <br/>
+                    <div class="custom-box">
+                        <aura:if isTrue="{! v.isLabelSet}">
+                            <c:SplitCampaign recordId="{!v.recordId}" fieldSet="HistoricalCampaigns" recordTypeNames="{!v.section1}" type="Historical Campaigns"/>
+                        </aura:if>
+                    </div>
+                </lightning:layoutItem>
+                
+                <lightning:layoutItem size="12" padding="around-small">
+                    <lightning:card title="Restore Liberty Campaigns">
+                    </lightning:card> <br/> 
+                    <div class="custom-box">
+                        <aura:if isTrue="{!v.section4!=null}">
+                            <c:SplitCampaign recordId="{!v.recordId}" fieldSet="RestoreLiberty" recordTypeNames="{!v.section4}" type="Restore Liberty"/>
+                        </aura:if>
+                    </div>
+                </lightning:layoutItem>
+                
+            </lightning:layout>
+    </div>
+	
+</aura:component>

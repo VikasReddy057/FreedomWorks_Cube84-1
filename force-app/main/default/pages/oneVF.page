@@ -1,0 +1,15 @@
+<apex:page >
+  <apex:includeLightning />
+    <div  id="compContainer" />
+  <script>
+     $Lightning.use("c:Oneapp", function() {
+         $Lightning.createComponent("c:one",
+             {PassesValueFromVF:"Micro System"},
+             "compContainer",
+             function(cmp) {
+          console.log("c:VFPageApp loaded successfully in VF page");
+             }
+         );
+     });
+  </script>
+</apex:page>

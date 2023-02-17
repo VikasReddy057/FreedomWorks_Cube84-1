@@ -1,0 +1,59 @@
+<aura:component controller="Create_New_Donation" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickActionWithoutHeader" access="global" >
+	    
+    <aura:attribute name="recordId" type="String" />
+     <aura:attribute name="recName" type="string" />
+    <aura:attribute name="hasRecord" type="boolean" />
+     <aura:if isTrue="{!!v.hasRecord}">
+    <div class="backgroundInverse">
+        <lightning:spinner alternativeText="Loading" variant="inverse" />
+    </div>
+    </aura:if>
+    <lightning:recordEditForm objectApiName="Opportunity" onload="{!c.handleCreateLoad}">
+        <lightning:messages />
+        
+    
+        <lightning:layout multipleRows="true">
+            <lightning:layoutItem size="12" padding="around-small">
+                    <lightning:inputField fieldName="Name" aura:id="one" />
+            </lightning:layoutItem>
+
+                <lightning:layoutItem size="6" padding="around-small">
+                            <lightning:inputField fieldName="Name_on_Check_if_Different__c" aura:id="three"/>
+                 </lightning:layoutItem>
+               <lightning:layoutItem size="6" padding="around-small">
+                            <lightning:inputField fieldName="CloseDate" aura:id="four"/>
+                 </lightning:layoutItem>
+                <lightning:layoutItem size="6" padding="around-small">
+                            <lightning:inputField fieldName="Designated_Organization__c" aura:id="ten"/>
+                 </lightning:layoutItem>
+                <lightning:layoutItem size="6" padding="around-small">
+                            <lightning:inputField fieldName="Amount" aura:id="eleven"/>
+                 </lightning:layoutItem>             
+                <lightning:layoutItem size="6" padding="around-small">
+                            <lightning:inputField fieldName="Donation_Source__c" aura:id="five"/>
+                 </lightning:layoutItem>
+                <lightning:layoutItem size="6" padding="around-small">
+                            <lightning:inputField fieldName="CheckNumber__c" aura:id="six"/>
+                 </lightning:layoutItem>               
+                <lightning:layoutItem size="12" padding="around-small">
+                            <lightning:inputField fieldName="Batch_Number__c" aura:id="seven"/>
+                 </lightning:layoutItem>
+                <lightning:layoutItem size="6" padding="around-small">
+                            <lightning:inputField fieldName="Occupation_for_FEC_Reports__c" aura:id="eight"/>
+                 </lightning:layoutItem>   
+                <lightning:layoutItem size="6" padding="around-small">
+                            <lightning:inputField fieldName="Employer_for_FEC_Reports__c" aura:id="nine"/>
+                 </lightning:layoutItem>   
+            </lightning:layout>
+           
+        <br/>
+        <aura:if isTrue="{!v.hasRecord}">
+        <center>    
+        <lightning:button class="slds-m-top_small"  variant="brand" onclick="{!c.onSave}" label="Save" />
+        <lightning:button class="slds-m-top_small"  variant="brand" label="Cancel" onclick="{!c.onCancel}" />    
+        </center>
+        </aura:if> 
+
+    </lightning:recordEditForm>
+
+</aura:component>

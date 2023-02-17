@@ -1,0 +1,26 @@
+{
+    "listId": 133,
+    "title": "Test for",
+    "friendlyTitle": null,
+    "description": "",
+    "populated": true,
+    "publicSignup": false,
+    "globalUnsub": false,
+    "query": "ListRecips.ListID = 133",
+    "categoryId": 0,
+    "blockDomains": "",
+    "seedListId": 0,
+    "createTime": "Tue Jan 14 04:04:14 CST 2020",
+    "creator": "sfintapi@freedomworks.org",
+    "externalId": "7012w0000004s83AAA",
+    "custom1": null,
+    "channel": "E",
+    "countRecips": true,
+    "brandIds": [
+        2,
+        3,
+        4
+    ],
+    "listCount": null,
+    "testMessageList": false
+}

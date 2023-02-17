@@ -1,0 +1,75 @@
+<apex:page docType="html-5.0" controller="PostUpSalesforceFieldMapping">
+<style>
+    .inputTextDesign {
+    margin-left:20px;
+    width: 50px;
+    height: 20px;
+}
+.spanFont{
+    font-size:17px;
+}
+
+</style>
+    <apex:Pagemessages id="msg"></apex:pageMessages>
+    <apex:form rendered="{!editFlag}">
+        
+        <apex:pageblock mode="detail">
+            <apex:pageblockSection title="Select PostUp Field" columns="4" collapsible="false">      
+                <apex:repeat value="{!fields}" var="string">
+                    <apex:pageBlockSectionItem dataTitle="POSTUP Field">
+                        <apex:outputLabel value="{!string.Name}" style="border-left:{!IF(string.Name == 'Address' || string.Name == 'ExternalId', '3px solid #c00', '')};vertical-align:{!IF(string.Name == 'Address' || string.Name == 'ExternalId', '1px', '')};"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem dataTitle="POSTUP Field Type">
+                        <apex:outputLabel value="{!string.PostUp_Field_Type__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem dataTitle="POSTUP Table">
+                        <apex:outputLabel value="{!string.PostUp_Table__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem dataTitle="Salesforce Field">
+                        <apex:selectList value="{!string.SfField__c}" size="1">
+                            <apex:selectOptions value="{! address}" />       
+                        </apex:selectList>
+                    </apex:pageBlockSectionItem>
+                </apex:repeat>
+                <apex:commandButton action="{!sync}" value="Sync"/>
+            </apex:pageblockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!saveFieldMap}" value="Save"/>
+            </apex:pageBlockButtons>    
+        </apex:pageblock>
+    </apex:form> 
+    
+    <apex:form rendered="{!viewFlag}">
+        <apex:pageblock mode="detail">
+            <apex:pageblockSection title="Selected PostUp Field" columns="4" collapsible="false">
+                <apex:repeat value="{!mappedFields}" var="string">
+                    <apex:pageBlockSectionItem dataTitle="POSTUP Field">
+                        <apex:outputLabel value="{!string.Name}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem dataTitle="POSTUP Field Type">
+                        <apex:outputLabel value="{!string.PostUp_Field_Type__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem dataTitle="POSTUP Table">
+                        <apex:outputLabel value="{!string.PostUp_Table__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem dataTitle="Salesforce Field">
+                        <apex:outputLabel value="{!string.SfField__c}"/>
+                    </apex:pageBlockSectionItem>
+                </apex:repeat>
+            </apex:pageblockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!editFieldMap}" value="Edit"/>
+            </apex:pageBlockButtons> 
+        </apex:pageblock>
+    </apex:form>
+    
+    <apex:form > <span class="spanFont">PostUp Cron job time interval (in hour(s)) for GetPostUpSubscriptionDetail</span>
+        <apex:inputText required="true" value="{!frequencyTime}" styleClass="inputTextDesign"/><br></br><br></br>
+        <span class="spanFont">PostUp Cron job time interval (in hour(s)) for GetPostUpRecipientDetail </span>
+        <apex:inputText required="true" value="{!frequencyTimehr}" styleClass="inputTextDesign"/> <br></br><br></br>
+        <apex:commandButton action="{!saveCronFrequency}" value="Save CronTime" style="margin-right:50px; font-size: 12px; margin-top: 5px; margin-left: 20px" />
+        <apex:commandButton action="{!stopCronJob}" value="Stop CronJob" style="margin-left: -20px; font-size: 12px; margin-top: 5px"/> <br></br>
+    </apex:form>
+
+    
+</apex:page>
